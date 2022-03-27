@@ -1,8 +1,7 @@
 ### Mana Tap Candle Co
 
 
-[IMG_3114](https://user-images.githubusercontent.com/100215186/160302677-f4d71930-644f-45ba-a680-efd717d1d804.jpg)
->
+<img src="https://user-images.githubusercontent.com/100215186/160302677-f4d71930-644f-45ba-a680-efd717d1d804.jpg" width="500">
 
 ***
 ## Date: 03/25/2022
@@ -38,7 +37,7 @@
 
 
 
-  ### HEADER:
+  
  ## ***Technologies***
  * HTML
  * CSS
