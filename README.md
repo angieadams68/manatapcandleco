@@ -14,12 +14,12 @@
 
 
  ## ***WHO ARE WE?***
- ### Welcome to Mana-tap! This is a candle company that allows you to create a candle referencing Magic The Gathering! As well as a variety of aromas to blend for a theme. When your candle runs low, beneath is a surprise card! The power lies in your mind Planeswalker! 
+ ### Welcome to Mana-tap! This is a candle company that allows you to create a candle referencing Magic The Gathering! As well as a variety of aromas to blend for a theme. When your candle runs low, beneath is a surprise card! The power lies in your mind Planes-walker! 
  
 ***
  
  ## ***Getting Started***
-## Simply visit our site, view what we have in stock, search for your favorite scent or color and checkout! BUT WAIT... The beauty of this store?! Create your own candle! Now. It is a MTG themed company but you have the option to customize a D&D Pokémon AND Funko Pop! Each candle will have a surprise relating to your Candle. (Cards, Action. Figures, Etc)
+# Simply visit our site, view what we have in stock, search for your favorite scent or color and checkout! BUT WAIT... The beauty of this store?! Create your own candle! Now. It is a MTG themed company but you have the option to customize a D&D Pokémon AND Funko Pop! Each candle will have a surprise relating to your Candle. (Cards, Action. Figures, Etc)
  
 
 ### MVP:
