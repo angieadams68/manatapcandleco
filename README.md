@@ -1,7 +1,7 @@
-# Mana Tap Candle Co
+### Mana Tap Candle Co
 
 
-<img src=![IMG_3114](https://user-images.githubusercontent.com/100215186/160302677-f4d71930-644f-45ba-a680-efd717d1d804.jpg)
+[IMG_3114](https://user-images.githubusercontent.com/100215186/160302677-f4d71930-644f-45ba-a680-efd717d1d804.jpg)
 >
 
 ***
@@ -11,7 +11,7 @@
 
  ### [Github](https://github.com/angieadams68) |  [LinkedIn](https://www.linkedin.com/in/aqsa-saleheen/)
  ***
- ![Image](imagelink)
+ 
 
 
  ## ***WHO ARE WE?***
@@ -40,7 +40,6 @@
 
   ### HEADER:
  ## ***Technologies***
-## ***Technologies***
  * HTML
  * CSS
  * Flexbox
@@ -49,8 +48,12 @@
  * Heroku
 
 
+## ***Coming Soon for Developers***
+*Hidden routes using conditional rendering to mimic the functionality of user authentication
+*Associate 2 or more of your models
+*Integrate unit testing
+*Integrate a 3rd party API
+
 
 ### **CHECK OUT MORE ON [TRELLO](https://trello.com/b/WG8frwte/candle-website-p-2)**
-
-
 
