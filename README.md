@@ -48,16 +48,13 @@
 
 
 ## ***Coming Soon for Developers***
-*Hidden routes using conditional rendering to mimic the functionality of user authentication
+* Hidden routes using conditional rendering to mimic the functionality of user authentication
 
+* Associate 2 or more of your models
 
-*Associate 2 or more of your models
+* Integrate unit testing
 
-
-*Integrate unit testing
-
-
-*Integrate a 3rd party API
+* Integrate a 3rd party API
 
 
 ### **CHECK OUT MORE ON [TRELLO](https://trello.com/b/WG8frwte/candle-website-p-2)**
