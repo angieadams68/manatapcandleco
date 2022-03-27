@@ -4,7 +4,7 @@
 <img src="https://user-images.githubusercontent.com/100215186/160302677-f4d71930-644f-45ba-a680-efd717d1d804.jpg" width="500">
 
 ***
-## Date: 03/25/2022
+## Date: 03/28/2022
 
 ## By: Angie Adams
 
@@ -18,7 +18,7 @@
  
  
  ## ***Getting Started***
- Simply visit our site, view what we have in stock, search for your favorite scent or color and checkout! BUT WAIT... The beauty of this store?! Create your own candle! Now. It is a MTG themed company but you have the option to customize a D&N, Pokémon AND Funko Pop! Each candle will have a surrpise relating to your Candle. 
+ Simply visit our site, view what we have in stock, search for your favorite scent or color and checkout! BUT WAIT... The beauty of this store?! Create your own candle! Now. It is a MTG themed company but you have the option to customize a D&D Pokémon AND Funko Pop! Each candle will have a surprise relating to your Candle. (Cards, Action. Figures, Etc)
  
 
 ### MVP:
@@ -49,8 +49,14 @@
 
 ## ***Coming Soon for Developers***
 *Hidden routes using conditional rendering to mimic the functionality of user authentication
+
+
 *Associate 2 or more of your models
+
+
 *Integrate unit testing
+
+
 *Integrate a 3rd party API
 
 
