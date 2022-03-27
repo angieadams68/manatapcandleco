@@ -56,6 +56,8 @@
 
 * Integrate a 3rd party API
 
+***
+
 
 ### **CHECK OUT MORE ON [TRELLO](https://trello.com/b/WG8frwte/candle-website-p-2)**
 
