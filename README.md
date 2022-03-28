@@ -24,12 +24,10 @@
 
 ### MVP:
   * Create your own Candle.
-  * Read about different aromas.
+  * Read about your candle / aromas
   * Update your candle with aromas, color, symbol.
-  * Delete any features you don't want.
-  * Dropdown option to guide you through our site.
-  * Search bar to view our site for non-candle items.
-  * Sumbit a form for gift customizations!
+  * Delete the candle off your cart! Check out other options!
+  
 
  ### Additional Features:
 * Leave us a review section.
@@ -56,6 +54,12 @@
 * Integrate unit testing
 
 * Integrate a 3rd party API
+
+* Dropdown option to guide you through our site.
+
+* Search bar to view our site for non-candle items.
+
+  * Sumbit a form for gift customizations!
 
 ***
 
