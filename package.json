@@ -1,0 +1,21 @@
+{
+  "name": "manatapcandleco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angieadams68/manatapcandleco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angieadams68/manatapcandleco/issues"
+  },
+  "homepage": "https://github.com/angieadams68/manatapcandleco#readme"
+}
