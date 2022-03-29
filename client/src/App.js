@@ -2,21 +2,21 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Home from './components/Home';
+import Home from './pages/Home';
 import { Link } from "react-router-dom";
-import Candles from './components/Candles';
-import Aromas from './components/Aromas';
-import FAQ from './components/FAQ';
+import Candles from './pages/Candles';
+import Aromas from './pages/Aromas';
+import FAQ from './pages/FAQ';
 
 function App() {
   return (
     <>
+    <Navbar />
       <Routes>
-        <Navbar />
-          <Route path='/' exact component={Home} />
-          <Route path='/candles' component={Candles} />
-          <Route path='/aromas' component={Aromas} />
-          <Route path='/faq' component={FAQ} />
+          <Route path='/' exact element={<Home></Home>} />
+          <Route path='/candles' element={<Candles></Candles>} />
+          <Route path='/aromas' element={<Aromas></Aromas>} />
+          <Route path='/faq' element={<FAQ></FAQ>} />
       </Routes>
     </>
   );
