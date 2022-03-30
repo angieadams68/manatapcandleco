@@ -7,6 +7,7 @@ import Home from './components/Home';
 import { Link } from "react-router-dom";
 import Candle from './components/Candle';
 import axios from 'axios'
+import Review from './components/Review';
 
 
 
@@ -15,33 +16,22 @@ const App = () => {
 
   
   return (
-    <div className="app">
-      <Candle />
+    <div className="App">
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <Routes>
+          <Route  path="/" element={ <Home /> } />
+          <Route path="/candles" element={ <Candle  />} />
+          <Route path="/reviews" element={ <Review  />} />
+        </Routes>
+      </main>
     </div>
   )
 }
 
 
 
-
-
-
-
-
-
-
-
-
-// function App() {
-//   return (
-//     <>
-//     <Navbar />
-//       <Routes>
-//           <Route path='/' exact element={<Home></Home>} />
-//           <Route path='/candles' element={<Candles></Candles>} />
-//       </Routes>
-//     </>
-//   );
-// }
 
 export default App;

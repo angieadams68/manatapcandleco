@@ -35,32 +35,6 @@ function Candle() {
             />
             ))}
             
-            <CandleItem
-              src=''
-              aromas=''
-              label='White'
-              path='/candles'
-            />
-          </ul>
-          <ul className='Candle__items'>
-            <CandleItem
-              src=''
-              aromas=''
-              label='Pink'
-              path='/candles'
-            />
-            <CandleItem
-              src=''
-              text=''
-              label='Purple'
-              path='/candles'
-            />
-            <CandleItem
-              src=''
-              text=''
-              label='Black'
-              path='/candles'
-            />
           </ul>
         </div>
       </div>
