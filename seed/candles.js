@@ -1,6 +1,8 @@
 const db = require('../db')
 const { Candle } = require('../models')
 
+/////// Connect to databse ///////
+
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {

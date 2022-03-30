@@ -1,10 +1,13 @@
 const db = require('../db')
 const { Candle, Review } = require('../models')
 
+///// Connecy to the database /////
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
+
 
 const main = async () => {
   const candles = await Candle.find()
+
 
   const reviews = [
     {

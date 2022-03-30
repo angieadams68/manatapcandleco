@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 })
 
 
-app.get("/candles", async (req, res) => {
+app.get('/candles', async (req, res) => {
     const candles = await Candle.find({});
     res.json(candles);
   });
@@ -31,7 +31,7 @@ app.get("/candles", async (req, res) => {
 
 
 
-  app.get("/reviews", async (req, res) => {
+  app.get('/reviews', async (req, res) => {
     const reviews = await Review.find({});
     res.json(reviews);
   });
