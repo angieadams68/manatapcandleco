@@ -8,8 +8,7 @@ import { Link } from "react-router-dom";
 import Candle from './components/Candle';
 import axios from 'axios'
 import Review from './components/Review';
-
-
+import Button from './components/Button'
 
 
 const App = () => {
@@ -17,6 +16,9 @@ const App = () => {
   
   return (
     <div className="App">
+      <div>
+        <Button />
+      </div>
       <header>
         <Navbar />
       </header>
@@ -24,12 +26,15 @@ const App = () => {
         <Routes>
           <Route  path="/" element={ <Home /> } />
           <Route path="/candles" element={ <Candle  />} />
-          <Route path="/reviews" element={ <Review  />} />
+          <Route path="/review" element={ <Review  />} />
         </Routes>
       </main>
     </div>
   )
 }
+
+
+
 
 
 

@@ -5,24 +5,24 @@ const { Candle, Review } = require('../models')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 
+
 const main = async () => {
   const candles = await Candle.find()
 
-
   const reviews = [
     {
-      name: 'Jane Austen',
-      review: 'This candle is FRAD',
+      name: '',
+      review: '',
       candle_id: candles[0]._id
     },
     {
-      name: 'Nabila A',
-      review: 'This candle makes me think of crystals and rose petals!',
+      name: '',
+      review: '',
       candle_id: candles[1]._id
     },
     {
-      name: 'Riley ',
-      review: 'This is such a great candle!',
+      name: ' ',
+      review: '',
       candle_id: candles[2]._id
     }
   ]

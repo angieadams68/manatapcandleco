@@ -31,9 +31,9 @@ app.get('/candles', async (req, res) => {
 
 
 
-  app.get('/reviews', async (req, res) => {
-    const reviews = await Review.find({});
-    res.json(reviews);
+  app.post("/reviews", async (req, res) => {
+    const Review = await Review.create(req.body);
+    await res.json(Review);
   });
 
 

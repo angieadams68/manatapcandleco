@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Button() {
 
-    return (<button>Home</button>)
+    return (<button>Check Out</button>)
 }
         
 
