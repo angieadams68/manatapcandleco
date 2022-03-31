@@ -7,6 +7,9 @@ import axios from 'axios'
 
 function Candle() {
   const [candles, setCandles] = useState([])
+  const [candleItem] = useState ([])
+  const [updateCandleItem] = useState('')
+
 
   useEffect(() => {
     async function getCandles() {
@@ -19,7 +22,9 @@ function Candle() {
     getCandles()
   },[])
 
-
+const updateCandle = () => {
+  axios.put(`http://localhost:3001/update`)
+}
   return (
     <div className='Candle'>
       <h1>Check out these MTG Candles!</h1>
@@ -34,7 +39,18 @@ function Candle() {
               name={candle.name}
             />
             ))}
-            
+            <h1>Create a Candle with your own Color, Scent and Image!</h1>
+        {candleItem.map((val, key) => {
+          return (
+            <div key={key} className="candle">
+              <h1> {val.candleName}</h1>
+              <input type="text" placeholder="Udate your Candle" />
+              <button onClick={updateCandle}>Update Candle</button>
+              <button>Add to Cart</button>
+            </div>
+          );
+})}
+
           </ul>
         </div>
       </div>

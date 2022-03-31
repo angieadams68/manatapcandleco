@@ -1,19 +1,19 @@
-import React from 'react';
-import { useState, useEffect } from 'react'
-import Navbar from './components/Navbar';
-import { Routes, Route } from 'react-router-dom';
-import './App.css';
-import Home from './components/Home';
+import React from "react";
+import { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./components/Home";
 import { Link } from "react-router-dom";
-import Candle from './components/Candle';
-import axios from 'axios'
-import Review from './components/Review';
-import Button from './components/Button'
-
+import Candle from "./components/Candle";
+import axios from "axios";
+import Review from "./components/Review";
+import Button from "./components/Button";
+import CandleItem from "./components/CandleItem";
 
 const App = () => {
-
   
+
   return (
     <div className="App">
       <div>
@@ -24,19 +24,14 @@ const App = () => {
       </header>
       <main>
         <Routes>
-          <Route  path="/" element={ <Home /> } />
-          <Route path="/candles" element={ <Candle  />} />
-          <Route path="/review" element={ <Review  />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/candles" element={<Candle />} />
+          <Route path="/review" element={<Review />} />
         </Routes>
+    
       </main>
     </div>
-  )
-}
-
-
-
-
-
-
+  );
+};
 
 export default App;
