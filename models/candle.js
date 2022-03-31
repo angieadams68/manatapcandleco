@@ -2,7 +2,7 @@ const { Schema } = require('mongoose')
 
 const Candle = new Schema(
   {
-    name: { type: String, required: true },
+    candleName: { type: String, required: true },
     description: { type: String, required: true },
     aromas: { type: String, required: true}
     
