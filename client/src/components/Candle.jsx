@@ -3,6 +3,7 @@ import './Candle.css';
 import CandleItem from './CandleItem';
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import App from '../App';
 
 
 function Candle() {
