@@ -10,7 +10,9 @@ const main = async () => {
     {
       name: 'Planeswalker Candle',
       description: 'White jar. Scent: Vanilla',
-      aromas: "Rosemary scent"
+      aromas: "Rosemary scent",
+      price: "$15",
+      
 
     },
     {

@@ -6,9 +6,11 @@
 // import App from "../App";
 // import Candle from "./Candle";
 
+// const [Checkout] = useState ([])
 
+// function Checkout () {
+    
 
-// function Checkout ()
 //  {
 //      return (
 //          <div>
