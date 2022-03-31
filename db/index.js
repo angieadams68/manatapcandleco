@@ -1,3 +1,4 @@
+
 const mongoose = require('mongoose')
 require('dotenv').config()
 
@@ -16,3 +17,6 @@ mongoose.set('debug', true)
 const db = mongoose.connection
 
 module.exports = db
+
+
+

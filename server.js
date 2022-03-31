@@ -48,13 +48,25 @@ app.put("/update", async (req, res) => {
 });
 
 
+app.delete("/delete/:id", async (req, res) => {
+  const id = req.params.id;
 
-
-app.delete("/delete/id", async (req, res) => {
-  const id = req.params.id
+  await CandleModel.findbyIdAndRemove(id).exec();
+  res.send("deleted");
 })
 
-
+const deleteCandle = async (req, res) => {
+  try {
+    const { id } = req.params;
+    let deleted = await Candle.findByIdAndDelete(id)
+    if (deleted) {
+      return res.status(200).send("deleted")
+    }
+    throw new Error("Not Found");
+  } catch (err) {
+    return res.status(500).send(error.message)
+  }
+}
 
 
 
