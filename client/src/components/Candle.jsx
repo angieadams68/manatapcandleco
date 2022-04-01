@@ -8,7 +8,7 @@ function Candle(props) {
 
   return (
     <div className="Candle">
-      <h1>Create a Candle with your own Color, Scent and Image! </h1>
+      <h1>Create with your own Color, Scent and Image! </h1>
       <div className="Candle__container">
         <div className="Candle__wrapper">
           <ul className="Candle__items">
@@ -25,8 +25,7 @@ function Candle(props) {
             ))}
           </ul>
         </div>
-        <h1>Create your own Candle!</h1>
-        <button>Add</button>
+        <h1>The power lies in your mind Planes-walker!</h1>
       </div>
     </div>
   );

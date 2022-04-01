@@ -40,3 +40,19 @@ main {
 }
 
 
+div.leaveAReview {
+  font-size: 40px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-top: 5%;
+}
+
+
+form.form {
+  font-size: 60px;
+  
+}
+
+
+.candleh1 {
+  font-size: large;
+}
