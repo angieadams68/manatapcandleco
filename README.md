@@ -26,14 +26,11 @@
   * Create your own Candle.
   * Read about your candle / aromas
   * Update your candle with aromas, color, symbol.
-  * Delete the candle off your cart! Check out other options!
+  * Delete the candle off your cart! 
+  * Leave us a Review!
   
 
- ### Additional Features:
-* Leave us a review section.
-* Follow us on- section.
-* FAQ Section. 
-
+ 
 
 
   
@@ -59,7 +56,15 @@
 
 * Search bar to view our site for non-candle items.
 
-  * Sumbit a form for gift customizations!
+* Sumbit a form for gift customizations!
+
+* Follow us on- Section
+
+* FAQ Section
+
+
+
+
 
 ***
 
