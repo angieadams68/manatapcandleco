@@ -20,7 +20,7 @@ const Review = (props) => {
         <input
           className="formName formInput"
           type="text"
-          value={props.review.name}
+          value={props.review}
           onChange={props.handleChange}
           name={"name"}
           placeholder={"your name"}

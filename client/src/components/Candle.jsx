@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 function Candle(props) {
-
-
   return (
     <div className="Candle">
       <h1>Create with your own Color, Scent and Image! </h1>
@@ -14,7 +12,7 @@ function Candle(props) {
           <ul className="Candle__items">
             {props.candles.map((candle) => (
               <CandleItem
-                id={candle._id} 
+                id={candle._id}
                 updateCandle={props.updateCandle}
                 deleteCandle={props.deleteCandle}
                 aromas={candle.aromas}

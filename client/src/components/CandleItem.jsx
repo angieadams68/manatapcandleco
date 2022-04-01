@@ -11,7 +11,7 @@ const CandleItem = (props) => {
         <li>{props.description}</li>
         <li>{props.name}</li>
         <li>{props.price}</li>
-        <li>{props.image}</li>
+        
       </ul>
       <button onClick={()=>props.updateCandle(props.id)}>Update Candle</button>
       <button onClick={()=>props.deleteCandle(props.id)}>Delete Candle</button>
@@ -20,3 +20,4 @@ const CandleItem = (props) => {
 };
 
 export default CandleItem;
+
