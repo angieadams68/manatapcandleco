@@ -5,15 +5,7 @@ import axios from "axios";
 
 function Candle(props) {
 
-// //...
-// let navigate = useNavigate()
 
-// const handleSubmit = (e) => {
-//   props.addBoat(e)
-//   navigate('/listings')
-// }
-
-//...
   return (
     <div className="Candle">
       <h1>Create a Candle with your own Color, Scent and Image! </h1>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
 import { Link } from "react-router-dom";
@@ -10,6 +10,7 @@ import axios from "axios";
 import Review from "./components/Review";
 import Button from "./components/Button";
 import CandleItem from "./components/CandleItem";
+import ChangeScent from "./components/Changescent"
 
 
 
@@ -20,7 +21,7 @@ const App = () => {
   const [candleItem] = useState([]);
   const [updateCandleItem] = useState("");
   const [setUpdateCandle] = useState([])
-  
+  let navigate= useNavigate()
   async function getCandles() {
     const res = await axios.get("http://localhost:3001/candles");
     console.log(res.data);
@@ -33,10 +34,7 @@ const App = () => {
 
   const updateCandle = (id) => {
     console.log (id)
-    // axios.put("http://localhost:3001/update", {
-    //   id: id,
-    //   updateCandle: updateCandle,
-    // });
+    navigate(`/candles/${id}/update`)
   };
 
   const deleteCandle = async (id) => {
@@ -59,6 +57,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/candles" element={<Candle candles={candles}updateCandle={updateCandle}deleteCandle={deleteCandle} />} />
           <Route path="/review" element={<Review />} />
+          <Route path="/candles/:id/update" element={<ChangeScent />} />
         </Routes>
 
 
@@ -73,18 +72,6 @@ const App = () => {
 export default App;
 
 
-
-
-//////
-// const Candle = require("../model/Candle”);
-
-// router.get("/", candles.getAllCandles);
-// router.post("/", candles.addCandle);
-// router.get("/:id", candles.getById);
-// router.put("/:id", candles.updateCandle);
-// router.delete("/:id", candles.deleteCandle);
-
-// module.exports = router;
 
 
 

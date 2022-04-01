@@ -1,45 +1,44 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
+// 
 
 
-let scent = [
-    {label: "Rosemary", value: "Rosemary"},
-    {label: "Peppermint", value: "Peppermint"},
-    {label: "Lavendar", value: "Lavendar"}
-
-]
 
 
-function smell() {
-    const [changescents, setChangescent] = useState({
-       aromas: ""
-    })
+// function Smell() {
 
 
-const createSmell = async () => {
-    let newSmell = await axios.post('http://localhost:3001/smells', smell)
-    console.log(newSmell)
-}
-
-const handleChange = (e) => {
-    setChangescent({...changescent, [e.target.aroma]: e.target.value })
-
-}
-
-// const handleSubmit = (e) => {
-//     e.preventDefault()
-//     createSmell()
+//   return (
+//     
+//   );
 // }
 
-return (
+// export default Smell;
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+let scent = [
+  { label: "Rosemary", value: "Rosemary" },
+  { label: "Peppermint", value: "Peppermint" },
+  { label: "Lavendar", value: "Lavendar" },
+];
+export default function Changescent() {
+      const [changescents, setChangescent] = useState("")
+  
+
+  const handleChange = (e) => {
+    setChangescent({ ...changescents, [e.target.aroma]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+      e.preventDefault()
+      
+  }
+  return (
     <div>
-        <select>
-            <option></option>
-        </select>
+     <select>
+         {scent.map((scents) => (
+          <option value={scents.value}>{scents.label}</option>
+        ))}
+      </select>
     </div>
-)
+  )
 }
-
-
-export default smell;
