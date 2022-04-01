@@ -8,23 +8,28 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const main = async () => {
   const candles = [
     {
-      name: 'Planeswalker Candle',
+      candleName: 'Planeswalker Candle',
       description: 'White jar. Scent: Vanilla',
       aromas: "Rosemary scent",
-      price: "$15",
+      price: 15,
+      image:"banana"
       
 
     },
     {
-      name: 'Midnight',
+      candleName: 'Midnight',
       description: 'Black jar. Scent: Woodsy',
-      aromas: "Lavender scent"
+      aromas: "Lavender scent",
+      price: 12,
+      image:"banana"
 
     },
     {
-        name: 'Dungeons and Dragons',
+        candleName: 'Dungeons and Dragons',
         description: 'Red jar. Scent: Sick mints',
-        aromas: 'Peppermint scent'
+        aromas: 'Peppermint scent',
+        price: 20,
+      image:"banana"
 
     }
 ]
