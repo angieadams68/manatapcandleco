@@ -56,13 +56,15 @@
 
 * Search bar to view our site for non-candle items.
 
-  * Sumbit a form for gift customizations!
+* Sumbit a form for gift customizations!
+
+* Follow us on- Section
+
+* FAQ Section
 
 
-* * Follow us on- section.
 
 
-* FAQ Section. 
 
 ***
 
