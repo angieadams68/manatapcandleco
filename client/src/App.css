@@ -53,6 +53,8 @@ form.form {
 }
 
 
-.candleh1 {
-  font-size: large;
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
 }

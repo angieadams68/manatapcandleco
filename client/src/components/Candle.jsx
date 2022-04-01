@@ -14,13 +14,14 @@ function Candle(props) {
           <ul className="Candle__items">
             {props.candles.map((candle) => (
               <CandleItem
-                src="" 
                 id={candle._id} 
                 updateCandle={props.updateCandle}
                 deleteCandle={props.deleteCandle}
                 aromas={candle.aromas}
                 description={candle.description}
                 name={candle.name}
+                image={candle.image}
+                price={candle.price}
               />
             ))}
           </ul>

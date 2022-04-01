@@ -13,7 +13,7 @@ const main = async () => {
       description: 'White jar. Scent: Vanilla',
       aromas: "Rosemary scent",
       price: 15,
-      image:"../images/IMG_2883.png"
+      image:"https://i.imgur.com/sHNvwJS.jpeg"
       
 
     },
@@ -22,7 +22,7 @@ const main = async () => {
       description: 'Black jar. Scent: Woodsy',
       aromas: "Lavender scent",
       price: 12,
-      image:"banana"
+      image:"https://i.imgur.com/sHNvwJS.jpeg"
 
     },
     {
@@ -30,7 +30,7 @@ const main = async () => {
         description: 'Red jar. Scent: Sick mints',
         aromas: 'Peppermint scent',
         price: 20,
-      image:"banana"
+      image:"https://i.imgur.com/sHNvwJS.jpeg"
 
     }
 ]
