@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 function Button() {
 
-    return  (<button>Check Out</button>)
-    
+    return  <Link to='/candles' > <button>Shop Now! </button></Link>
 }
+
         
 
 

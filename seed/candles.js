@@ -12,7 +12,7 @@ const main = async () => {
       description: 'White jar. Scent: Vanilla',
       aromas: "Rosemary scent",
       price: 15,
-      image:"banana"
+      image:"../images/IMG_2883.png"
       
 
     },

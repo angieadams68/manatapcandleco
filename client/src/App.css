@@ -7,7 +7,9 @@ h1 {
   text-align: center;
 }
 
-
+button {
+  color: green
+}
 
 
 a {
@@ -36,4 +38,5 @@ main {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
 
