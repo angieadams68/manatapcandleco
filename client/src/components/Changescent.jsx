@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 let scent = [
-  { label: "Rosemary", value: "Rosemary" },
+  { label: "Blueberry", value: "Blueberry" },
   { label: "Peppermint", value: "Peppermint" },
   { label: "Lavendar", value: "Lavendar" },
 ];

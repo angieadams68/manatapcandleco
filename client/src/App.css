@@ -7,8 +7,16 @@ h1 {
   text-align: center;
 }
 
-button {
-  color: green
+.button {
+  position: absolute;
+  top:50%;
+  background-color:#2d2dd8;
+  color: #fff;
+  border:none; 
+  border-radius:10px; 
+  padding:15px;
+  min-height:30px; 
+  min-width: 120px;
 }
 
 
@@ -43,7 +51,8 @@ main {
 div.leaveAReview {
   font-size: 40px;
   font-family:Georgia, 'Times New Roman', Times, serif;
-  margin-top: 5%;
+  margin-top: 23%;
+  color:rgb(6, 7, 9);
 }
 
 
@@ -54,7 +63,48 @@ form.form {
 
 
 ul {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
 }
+
+img {
+  max-width:960px;
+  text-align:center;
+  }
+  
+  
+
+  body {
+    background-image: url("https://wallpaperaccess.com/full/1671596.jpg");
+  background-size: cover;
+  
+  }
+
+  li {
+    color: white;
+  }
+  
+
+
+  h1  {
+
+margin-top: 11%;
+
+  }
+
+  
+
+  p {
+    font-size: 30px;
+    margin-top: 15%;
+    font-weight: bolder;
+  }
+
+  h3 {
+    color: rgb(145, 17, 17);
+    margin-top: 12%
+  }
+
+
+  

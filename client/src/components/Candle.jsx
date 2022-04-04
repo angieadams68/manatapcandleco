@@ -6,21 +6,22 @@ import axios from "axios";
 function Candle(props) {
   return (
     <div className="Candle">
-      <h1>Create with your own Color, Scent and Image! </h1>
+      <h3>Create with your own Color, Scent and Image! </h3>
       <div className="Candle__container">
         <div className="Candle__wrapper">
           <ul className="Candle__items">
             {props.candles.map((candle) => (
+              <div>
+                {console.log(candle)}
               <CandleItem
                 id={candle._id}
-                updateCandle={props.updateCandle}
-                deleteCandle={props.deleteCandle}
                 aromas={candle.aromas}
                 description={candle.description}
-                name={candle.name}
+                name={candle.candleName}
                 image={candle.image}
                 price={candle.price}
               />
+              </div>
             ))}
           </ul>
         </div>

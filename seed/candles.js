@@ -10,23 +10,23 @@ const main = async () => {
     {
       candleName: "Planeswalker Candle",
       description: "White jar. Scent: Vanilla",
-      aromas: "Rosemary scent",
+      aromas: "Blueberry scent",
       price: 15,
-      image: "https://i.imgur.com/sHNvwJS.jpeg",
+      image: "",
     },
     {
       candleName: "Midnight",
       description: "Black jar. Scent: Woodsy",
       aromas: "Lavender scent",
       price: 12,
-      image: "https://i.imgur.com/sHNvwJS.jpeg",
+      image: "",
     },
     {
       candleName: "Dungeons and Dragons",
       description: "Red jar. Scent: Sick mints",
       aromas: "Peppermint scent",
       price: 20,
-      image: "https://i.imgur.com/sHNvwJS.jpeg",
+      image: "",
     },
   ];
 

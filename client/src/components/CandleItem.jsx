@@ -1,7 +1,9 @@
 import React from "react"
 
 
-
+const updateCandle = (props) => {
+  
+}
 
 const CandleItem = (props) => {
   return (
@@ -11,7 +13,8 @@ const CandleItem = (props) => {
         <li>{props.description}</li>
         <li>{props.name}</li>
         <li>{props.price}</li>
-        
+        <li>{props.image}</li>
+        <img src={props.image} /> 
       </ul>
       <button onClick={()=>props.updateCandle(props.id)}>Update Candle</button>
       <button onClick={()=>props.deleteCandle(props.id)}>Delete Candle</button>
