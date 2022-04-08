@@ -12,21 +12,21 @@ const main = async () => {
       description: "White jar. Scent: Vanilla",
       aromas: "Blueberry scent",
       price: 15,
-      image: "",
+      image: "banana",
     },
     {
       candleName: "Midnight",
       description: "Black jar. Scent: Woodsy",
       aromas: "Lavender scent",
       price: 12,
-      image: "",
+      image: "banana",
     },
     {
       candleName: "Dungeons and Dragons",
       description: "Red jar. Scent: Sick mints",
       aromas: "Peppermint scent",
       price: 20,
-      image: "",
+      image: "banana",
     },
   ];
 

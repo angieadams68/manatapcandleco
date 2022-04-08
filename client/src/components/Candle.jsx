@@ -1,7 +1,7 @@
 import React from "react";
 import CandleItem from "./CandleItem";
-import { useState, useEffect } from "react";
-import axios from "axios";
+// import { useState, useEffect } from "react";
+// import axios from "axios";
 
 function Candle(props) {
   return (
@@ -14,6 +14,8 @@ function Candle(props) {
               <div>
                 {console.log(candle)}
               <CandleItem
+              updateCandle={props.updateCandle}
+              deleteCandle={props.deleteCandle}
                 id={candle._id}
                 aromas={candle.aromas}
                 description={candle.description}

@@ -1,38 +1,39 @@
-const db = require('../db')
-const { Candle, Review } = require('../models')
+const db = require("../db");
+const { Review } = require("../models");
 
-///// Connecy to the database /////
-db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
+db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
 
 const main = async () => {
-  const candles = await Candle.find()
-
   const reviews = [
     {
-      name: '',
-      review: '',
-      candle_id: candles[0]._id
+      name: "Ian Adams",
+      review:
+        "I cant get over the scents!"
     },
     {
-      name: '',
-      review: '',
-      candle_id: candles[1]._id
+      name: "Tommy S",
+      review:
+        "Why wasnt this around when I was a teen?! "
     },
     {
-      name: ' ',
-      review: '',
-      candle_id: candles[2]._id
-    }
-  ]
+      name: "Anida Mann",
+      review: "I enjoyed the surprise card!!"
+    },
+    {
+      name: "Chaz J",
+      review:
+        "This is really awesome "
+    },
+  ];
 
-  await Review.insertMany(reviews)
-  console.log('Created reviews!')
-}
+  await Review.insertMany(review);
+  console.log("Created some review!");
+};
 const run = async () => {
-  await main()
-  db.close()
-}
+  await main();
+  db.close();
+};
 
-run()
+run();

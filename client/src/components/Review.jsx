@@ -1,40 +1,19 @@
-import React from "react"
-
-import '../App.css'
-import { useNavigate } from "react-router-dom";
+// import { Link } from 'react-router-dom'
+import React from 'react'
 
 
 const Review = (props) => {
-  let navigate = useNavigate();
- 
-  const submitData = (e) => {
-    e.preventDefault();
-    props.addReview(e);
-    navigate("/reviews");
-  };
-
   return (
+    <div className='reviewsPage'>
+        
     <div id="reviewDiv">
-      <div className="leaveAReview">Leave a Review</div>
-      <form className="form" onSubmit={submitData}>
-        <input
-          className="formName formInput"
-          type="text"
-          value={props.review}
-          onChange={props.handleChange}
-          name={"name"}
-          placeholder={"your name"}
-        />
-        <input
-          className="formReview formInput"
-          type="text-area"
-          value={props.review}
-          onChange={props.handleChange}
-          name={"review"}
-          placeholder={"your review"}
-        />
-        <button className="formButton">Submit</button>
-      </form>
+      {props.reviews.map((review) => (
+        <div className="reviews" key={review._id}>
+          <h3 className="reviewName">{review.name}</h3>
+          <p className="reviewP">{review.review}</p>
+        </div>
+      ))}
+    </div>
     </div>
   );
 };

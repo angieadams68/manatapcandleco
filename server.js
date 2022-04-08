@@ -9,14 +9,10 @@ const res = require("express/lib/response");
 
 const app = express();
 
-/////////////// MIDDLEWARE ////////////////
-
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(logger("dev"));
-
-//////// ROUTES ////////
 
 app.get("/", (req, res) => {
   res.send("This is root!");
@@ -27,9 +23,14 @@ app.get("/candles", async (req, res) => {
   res.json(candles);
 });
 
-app.post("/reviews", async (req, res) => {
-  const Review = await Review.create(req.body);
-  await res.json(Review);
+app.get("/reviews", async (req, res) => {
+  const reviews = await Review.find({});
+  res.json(reviews);
+});
+
+app.post("/reviews/new", async (req, res) => {
+  const newReview = await Review.create(req.body);
+  await res.json(newReview);
 });
 
 app.put("/update", async (req, res) => {
@@ -47,17 +48,12 @@ app.put("/update", async (req, res) => {
   }
 });
 
-
 app.delete("/delete/:id", async (req, res) => {
   const id = req.params.id;
 
   await Candle.findByIdAndRemove(id).exec();
   res.send("deleted");
-})
-
-
-
-
+});
 
 /////////////// EXPRESS SERVER LISTEN TO PORT //////////////////
 
