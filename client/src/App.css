@@ -1,6 +1,8 @@
 .navHeader {
   background-color: rgb(136, 12, 12);
   height: 45px;
+  justify-content: space-between;
+  gap: 10px 30px;
 }
 
 h1 {
@@ -29,8 +31,6 @@ a {
 
 div {
   text-align: center;
-  
-
 }
 
 
@@ -44,7 +44,7 @@ div.Candle__container {
 main {
   font-size: 30px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  align-items: center;
 }
 
 
@@ -53,6 +53,8 @@ div.leaveAReview {
   font-family:Georgia, 'Times New Roman', Times, serif;
   margin-top: 23%;
   color:rgb(6, 7, 9);
+  align-content: stretch;
+
 }
 
 
