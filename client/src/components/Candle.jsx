@@ -1,7 +1,5 @@
 import React from "react";
 import CandleItem from "./CandleItem";
-// import { useState, useEffect } from "react";
-// import axios from "axios";
 
 function Candle(props) {
   return (
@@ -13,16 +11,16 @@ function Candle(props) {
             {props.candles.map((candle) => (
               <div>
                 {console.log(candle)}
-              <CandleItem
-              updateCandle={props.updateCandle}
-              deleteCandle={props.deleteCandle}
-                id={candle._id}
-                aromas={candle.aromas}
-                description={candle.description}
-                name={candle.candleName}
-                image={candle.image}
-                price={candle.price}
-              />
+                <CandleItem
+                  updateCandle={props.updateCandle}
+                  deleteCandle={props.deleteCandle}
+                  id={candle._id}
+                  aromas={candle.aromas}
+                  description={candle.description}
+                  name={candle.candleName}
+                  image={candle.image}
+                  price={candle.price}
+                />
               </div>
             ))}
           </ul>

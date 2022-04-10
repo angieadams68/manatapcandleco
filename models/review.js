@@ -1,4 +1,4 @@
-const { Schema } = require('mongoose')
+const { Schema } = require("mongoose");
 
 const Review = new Schema(
   {
@@ -6,6 +6,6 @@ const Review = new Schema(
     review: { type: String, required: true },
   },
   { timestamps: true }
-)
+);
 
-module.exports = Review
+module.exports = Review;

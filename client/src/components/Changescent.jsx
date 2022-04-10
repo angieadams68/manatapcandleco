@@ -1,6 +1,4 @@
 import React from "react";
-// import { useNavigate } from "react-router-dom";
-// import axios from "axios";
 
 let scent = [
   { label: "Blueberry", value: "Blueberry" },
@@ -8,15 +6,6 @@ let scent = [
   { label: "Lavendar", value: "Lavendar" },
 ];
 export default function Changescent() {
-//   const [changescents, setChangescent] = useState("");
-
-//   const handleChange = (e) => {
-//     setChangescent({ ...changescents, [e.target.aroma]: e.target.value });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//   };
   return (
     <div>
       <select>

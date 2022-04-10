@@ -4,22 +4,15 @@ import Navbar from "./components/Navbar";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
-// import { Link } from "react-router-dom";
 import Candle from "./components/Candle";
 import axios from "axios";
 import NewReview from "./components/NewReview";
 import Button from "./components/Button";
-// import CandleItem from "./components/CandleItem";
 import ChangeScent from "./components/Changescent";
 import Review from "./components/Review";
 
-
-
 const App = () => {
   const [candles, setCandles] = useState([""]);
-  // const [candleItem] = useState([]);
-  // const [updateCandleItem] = useState("");
-  // const [setUpdateCandle] = useState([]);
   const [reviews, setReviews] = useState([]);
   const [newReview, setNewReview] = useState({
     name: "",
@@ -27,22 +20,17 @@ const App = () => {
     rating: "",
   });
 
-  
   useEffect(() => {
     async function getReviews() {
       try {
         let res = await axios.get(`http://localhost:3001/reviews`);
         setReviews(res.data);
-        // console.log(res.data)
       } catch (error) {
         console.log(error);
       }
     }
     getReviews();
   }, []);
-  
-
-
 
   let navigate = useNavigate();
   async function getCandles() {
@@ -65,8 +53,6 @@ const App = () => {
     stat();
   };
 
-
-
   const addNewReview = async (e) => {
     e.preventDefault();
     const currentReviews = reviews;
@@ -76,25 +62,18 @@ const App = () => {
       review: newReview.review,
     };
 
-    let response = await axios.post("http://localhost:3001/reviews/new",createdReview);
+    let response = await axios.post(
+      "http://localhost:3001/reviews/new",
+      createdReview
+    );
     currentReviews.push(response.data);
     setReviews(currentReviews);
-    setNewReview({ name: "", review: ""});
+    setNewReview({ name: "", review: "" });
   };
 
   const handleChange = (e) => {
     setNewReview({ ...newReview, [e.target.name]: e.target.value });
   };
-
-
-
-
-
-
-
-
-
-
 
   return (
     <div className="App">
@@ -111,20 +90,20 @@ const App = () => {
                 deleteCandle={deleteCandle}
               />
             }
-            />
-           
-              <Route
-            path="/reviews/new"
+          />
+
+          <Route
+            path="/review/new"
             element={
               <NewReview
-              newReview={newReview}
+                newReview={newReview}
                 handleChange={handleChange}
                 addNewReview={addNewReview}
               />
             }
-            />
-            
-          <Route path="/reviews" element={<Review reviews={reviews} />} />
+          />
+
+          <Route path="/review" element={<Review reviews={reviews} />} />
           <Route path="/candles/:id/update" element={<ChangeScent />} />
         </Routes>
 
@@ -134,8 +113,6 @@ const App = () => {
       </main>
     </div>
   );
-          }
-        
-      
+};
 
 export default App;

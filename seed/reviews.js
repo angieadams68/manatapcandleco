@@ -2,6 +2,7 @@ const db = require("../db");
 const { Review } = require("../models");
 
 
+
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
 
@@ -28,7 +29,7 @@ const main = async () => {
     },
   ];
 
-  await Review.insertMany(review);
+  await Review.insertMany(reviews);
   console.log("Created some review!");
 };
 const run = async () => {

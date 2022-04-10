@@ -1,7 +1,7 @@
 const db = require("../db");
 const { Candle } = require("../models");
 
-/////// Connect to database
+/////// Connect to database ////////
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
