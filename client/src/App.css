@@ -1,20 +1,20 @@
 .navHeader {
   background-color: rgb(136, 12, 12);
   height: 45px;
+  display: flex;
   justify-content: space-between;
   gap: 10px 30px;
 }
 
 h1 {
-  text-align: center;
+  align-self: auto;
 }
 
 .button {
   position: absolute;
   top:50%;
   background-color:#2d2dd8;
-  color: #fff;
-  border:none; 
+  color: #fff; 
   border-radius:10px; 
   padding:15px;
   min-height:30px; 
@@ -24,7 +24,7 @@ h1 {
 
 a {
   padding: 10px;
- color: black;
+ color: rgb(233, 196, 196);
  font-size: 40px;
 }
 
@@ -37,6 +37,7 @@ div {
 div.Candle__container {
 
   text-align: center;
+  flex-direction: column;
 
 }
 
@@ -60,6 +61,8 @@ div.leaveAReview {
 
 form.form {
   font-size: 60px;
+  align-items: center;
+  flex-wrap: nowrap wrap wrap-reverse;
   
 }
 
@@ -85,6 +88,7 @@ img {
 
   li {
     color: white;
+    display: inline-block;
   }
   
 
@@ -92,6 +96,7 @@ img {
   h1  {
 
 margin-top: 11%;
+align-items: center;
 
   }
 
@@ -105,7 +110,8 @@ margin-top: 11%;
 
   h3 {
     color: rgb(167, 17, 17);
-    margin-top: 12%
+    margin-top: 12%;
+    align-items: center;
   }
 
 
